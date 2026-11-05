@@ -1,0 +1,88 @@
+.loading {
+  display:none
+}
+.weekly-overview {
+    background: #fff;
+    border: 3px solid #e5e7eb;
+    border-radius: 25px;
+    padding: 35px 40px;
+    margin: 20px 0;
+}
+
+.weekly-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.weekly-title i {
+    color: #625cff;
+    font-size: 25px;
+}
+
+.weekly-title h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.weekly-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.weekly-day {
+    text-align: center;
+    padding: 8px 5px;
+    border-radius: 20px;
+    color: #64748b;
+}
+
+.weekly-day.active {
+    background: #e0e7ff;
+}
+
+.day-name {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.day-number {
+    font-size: 21px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.day-calories {
+    font-size: 28px;
+    font-weight: bold;
+    color: #009b65;
+}
+
+.day-calories.zero {
+    color: #cbd5e1;
+}
+
+.day-kcal {
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.day-items {
+    font-size: 17px;
+    margin-top: 10px;
+    color: #94a3b8;
+}
+
+@media (max-width: 700px) {
+    .weekly-overview {
+        padding: 20px 10px;
+        overflow-x: auto;
+    }
+
+    .weekly-days {
+        min-width: 550px;
+    }
+}
